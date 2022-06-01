@@ -9,14 +9,11 @@
 }
 
 .grid {
-  padding: 3em;
-  padding-left: 170px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .column {
-  margin-left: 3rem;
 }
 
 .img-empty {
