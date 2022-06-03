@@ -13,6 +13,20 @@
   height: 450px;
 }
 
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  grid-auto-rows: minmax(100px, auto);
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.com{
+  justify-content: center !important;
+  text-align: center !important;
+}
+
 #home{
     top: 100;
     left: 100;

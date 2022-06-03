@@ -8,7 +8,7 @@ window.onload = function() {
 
     //https://api.themoviedb.org/3/movie/popular?api_key=c5dd1166b8fea2eab352e5822a290868&language=de&page=1&region=AT
 
-    const div = document.querySelector('.slider');
+    const div = document.querySelector('.grid');
     const input = document.querySelector('#search');
     const button = document.querySelector('.btn-search');
     var page = 1;
@@ -61,7 +61,7 @@ window.onload = function() {
         if(movie.poster_path != null)
         {
             const image = createImage(movie.id, movie.poster_path);
-            image.classList.add('ms-3', 'mb-3', 'images');
+            image.classList.add('images', 'com');
             div.appendChild(image);
             image.style.cursor = 'pointer';
             image.addEventListener('click', () => {
