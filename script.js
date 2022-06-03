@@ -10,7 +10,6 @@ window.onload = function() {
 
     const div = document.querySelector('.grid');
     const input = document.querySelector('#search');
-    const button = document.querySelector('.btn-search');
     var page = 1;
 
     input.addEventListener('keydown', function(e) {

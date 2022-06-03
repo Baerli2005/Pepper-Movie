@@ -28,7 +28,7 @@ window.onload = function() {
             .then(response => response.json())
             .then(data => {
                 console.log(data);
-                title.innerText = data.title;
+                title.innerText = data.title + " (" + data.release_date.substring(0, 4) + ")";
                 document.title = data.title;
                 handlung.innerText = data.overview;
                 picture.src = 'https://image.tmdb.org/t/p/w300/' + data.poster_path;
