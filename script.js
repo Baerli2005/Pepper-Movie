@@ -61,8 +61,11 @@ window.onload = function() {
         if(movie.poster_path != null)
         {
             const image = createImage(movie.id, movie.poster_path);
-            image.classList.add('images', 'com');
-            div.appendChild(image);
+            const around = document.createElement('div');
+            around.classList.add('com');
+            image.classList.add('images');
+            around.appendChild(image);
+            div.appendChild(around);
             image.style.cursor = 'pointer';
             image.addEventListener('click', () => {
                 sendMovie(movie.id);
